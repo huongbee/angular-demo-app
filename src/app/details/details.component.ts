@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { Housinglocation } from '../housinglocation';
+import { Housinglocation } from '../interfaces/housinglocation';
 import { HousingService } from '../services/housing.service';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
