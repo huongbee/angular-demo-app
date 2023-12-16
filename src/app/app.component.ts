@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
           />
         </header>
       </a>
+      <div><p>Link to Heros</p></div>
       <section class="content">
         <router-outlet></router-outlet>
       </section>
