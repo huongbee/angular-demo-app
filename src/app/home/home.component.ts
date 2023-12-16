@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
-import { HousingService } from '../housing.service';
+import { HousingService } from '../services/housing.service';
 import { Housinglocation } from '../housinglocation';
 @Component({
   selector: 'app-home',
@@ -50,7 +50,9 @@ export class HomeComponent {
   housingService: HousingService = inject(HousingService);
 
   constructor() {
-    this.housingLocationList = this.housingService.getAllHousingLocations();
+    this.housingService.getAllHousingLocations().then((result) => {
+      this.housingLocationList = result;
+    });
   }
   filterResults(text: string) {
     if (!text) {
