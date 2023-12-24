@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
         </a>
         <a class="heros-header" [routerLink]="['heros']">Link to Heros</a>
         <a class="heros-header" routerLink="/dashboard">Dashboard</a>
+        <a class="heros-header" routerLink="/add-hero">Add new Hero</a>
       </header>
       <section class="content">
         <router-outlet></router-outlet>
